@@ -6,6 +6,13 @@
     <title>Web Andhika Setiawan</title>
     <link rel="stylesheet" href="CSS/style.css">
     <section>
+        <div class="Pembuka">
+        <h1>Welcome to Katik</h1>
+        <p>Hai Sobat, Selamat datang di Katik</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        </div>
+    </section>
+    <section>
         <div class="Kalkulator-Segitiga">
             <h1>Kalkulator Segitiga</h1>
         </div>
@@ -21,7 +28,7 @@
     <Section>
         <div class="Gambar-Segitiga">
             <img 
-        src="https://cilacapklik.com/wp-content/uploads/2021/07/Rumus-Segitiga-1024x576.jpg">
+        src="https://cdn.utakatikotak.com/finder/gambar%20bangun%20datar%20segitiga%20dan%20rumusnya.png">
         </div>
     </Section>
         <div>
@@ -32,28 +39,27 @@
             <h3>a = Alas</h3>
             <h3>T = Tinggi</h3>
         </div>
-        <div class="Hitung-Luas-Segitiga">
-            <h2>Hitung Luas Segitiga</h2>
-        </div>
     <Section>
-        <form>
-            <label for="a">Alas:</label>
-            <input type="number" id="Alas" value="0">
-            <br>
-            <label for="b">Tinggi:</label>
-            <input type="number" id="Tinggi" value="0">
-            <br>
-            <label for="h">Luas:</label>
-            <input type="number" id="Luas" value="0">
-            <br>
-            <button id="calculate">Hitung</button>
-            <p id="result"></p>
-          </form>
-    </Section>
+        <div class="perhitungan-Luas">
+            <header>
+                <p>Hitung Luas Segitiga</p>
+            </header>
+            <form>
+                <input type="number" id="Alas" name="Alas" placeholder="nilai Alas">
+                <br>
+                <input type="number" id="Tinggi" name="Tinggi" placeholder="nilai Tinggi">
+                <br>
+            </form>                
+        </div>
 
-    <div>
-        <button onclick="hitung" class="btn-Hitung">Hitung</button>
-    </div>
+        <div id="Luas"></div>
+        <div id="hasil perhitungan"></div>
+
+        <div class="button">
+            <div class="hitung"></div>
+            <button id="hitung" onclick="hitungluas()">Hitung</button>
+        </div>
+    </Section>
     <script src="JS/index.js"></script>
 </body>
 </html>
